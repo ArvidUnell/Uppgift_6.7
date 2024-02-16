@@ -15,19 +15,19 @@ namespace Uppgift_6_7
         /// <returns>Om talet är primt eller ej</returns>
         static bool ÄrPrimt(int tal)
         {
-            if (tal == 1)
+            if (tal == 1 || tal == 0)
             {
                 return false;
             }
 
-            for (int i = 2; i <= tal/2; i++)
+            for (int i = 2; i <= tal / 2; i++)
             {
                 if (tal % i == 0)
                 {
                     return false;
                 }
             }
-           
+
             return true;
         }
     }
